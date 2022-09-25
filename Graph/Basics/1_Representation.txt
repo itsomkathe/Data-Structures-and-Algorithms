@@ -1,0 +1,2 @@
+Edge: Source -> Destionation, Weight
+ArrayList<Edge> graph;
