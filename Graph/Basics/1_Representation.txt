@@ -1,2 +1,2 @@
-Edge: Source -> Destionation, Weight
-ArrayList<Edge> graph;
+Edge: Source -> Neighbour, Weight
+ArrayList<Edge>[] graph;
