@@ -26,7 +26,9 @@ public class Q1HasPath {
         int dest = Integer.parseInt(br.readLine());
 
         ArrayList<Edge>[] graph = new ArrayList[vtces];
-        Arrays.fill(graph, new ArrayList<>());
+        for (int i = 0; i < vtces; i++) {
+            graph[i] = new ArrayList<>();
+        }
 
         for(int i = 0;i<edges; i++){
             String[] edge = br.readLine().split(" ");
