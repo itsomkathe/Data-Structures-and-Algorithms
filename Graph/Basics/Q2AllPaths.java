@@ -26,7 +26,7 @@ public class Q2AllPaths {
         int src = Integer.parseInt(br.readLine());
         int dest = Integer.parseInt(br.readLine());
 
-        ArrayList<Edge>[] graph = new ArrayList[vtces];
+        ArrayList<Edge>[] graph = (ArrayList<Edge>[]) new ArrayList<?>[vtces];
         for (int i = 0; i < vtces; i++) {
             graph[i] = new ArrayList<>();
         }
