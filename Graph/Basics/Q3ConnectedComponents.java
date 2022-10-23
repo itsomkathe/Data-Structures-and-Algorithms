@@ -61,11 +61,9 @@ public class Q3ConnectedComponents {
         }
     }
 
-}
-
 /*GeeksForGeeks Solution (Adjecancy Matrix)*/
 class Solution {
-    static int numProvinces(ArrayList<ArrayList<Integer>> adj, int V) {
+    int numProvinces(ArrayList<ArrayList<Integer>> adj, int V) {
         boolean[] visited = new boolean[V];
         int provinces = 0;
         for(int i=0; i<V; i++){
@@ -77,7 +75,7 @@ class Solution {
         return  provinces;
     }
     
-    static void dfs(int src, ArrayList<ArrayList<Integer>> adj, boolean[] visited ){
+    void dfs(int src, ArrayList<ArrayList<Integer>> adj, boolean[] visited ){
         if(visited[src]) return;
         
         visited[src] = true;
@@ -91,3 +89,7 @@ class Solution {
         }
     }
 };
+
+
+}
+
